@@ -14,7 +14,7 @@ namespace ServiceBroker_Consola.Cls
     internal class ServiceBrokerSQL
     {
         private string nombreMensaje = "";
-        private string cadenaConexion = "";
+        private string cadenaConexion = "http://localhost:1433/";
         private string comandoEscucha = ""; 
         private SqlConnection conexion;
 
@@ -24,7 +24,7 @@ namespace ServiceBroker_Consola.Cls
         /// <summary>
         /// Inicializador.
         /// </summary>
-        /// <param name="cadenaConexion"></param>
+        /// <param name="cadenaConexion">http://localhost:1433/</param>
         /// <param name="comandoEscucha"></param>
         public ServiceBrokerSQL(string connectionString, string SQLquery, string nombreMensaje)
         {
